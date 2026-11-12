@@ -1,0 +1,20 @@
+name: Publish Mac test release
+on:
+  push:
+    tags:
+      - 'v*-mts-test*'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify packaged builds
+        working-directory: Downloads
+        run: sha256sum --check SHA256SUMS.txt
+      - name: Publish prerelease and upload Mac builds
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME"             Downloads/*.zip Downloads/SHA256SUMS.txt             --verify-tag --prerelease             --title "MTS-ESP Test Builds — macOS Apple Silicon"             --notes-file RELEASE_NOTES.md

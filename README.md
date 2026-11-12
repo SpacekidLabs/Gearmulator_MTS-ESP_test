@@ -4,11 +4,13 @@ Experimental microtonal versions of **NodalRed2x**, **JE8086**, and **OsTIrus**,
 
 ## Mac downloads
 
+**[Download the latest test release](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP_test/releases)**
+
 Apple Silicon (arm64), macOS 11+, AU and VST3. Native hosts only; no Intel build.
 
-- [NodalRed2x MTS Test](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP/raw/refs/heads/main/Downloads/NodalRed2x-MTS-Test-macOS-arm64.zip)
-- [JE8086 MTS Test](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP/raw/refs/heads/main/Downloads/JE8086-MTS-Test-macOS-arm64.zip)
-- [OsTIrus MTS Test](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP/raw/refs/heads/main/Downloads/OsTIrus-MTS-Test-macOS-arm64.zip)
+- [NodalRed2x MTS Test](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP_test/raw/refs/heads/main/Downloads/NodalRed2x-MTS-Test-macOS-arm64.zip)
+- [JE8086 MTS Test](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP_test/raw/refs/heads/main/Downloads/JE8086-MTS-Test-macOS-arm64.zip)
+- [OsTIrus MTS Test](https://github.com/SpacekidLabs/Gearmulator_MTS-ESP_test/raw/refs/heads/main/Downloads/OsTIrus-MTS-Test-macOS-arm64.zip)
 
 See [installation and firmware requirements](INSTALL.txt). You must supply compatible firmware; ROMs and personal presets are not included. These developer builds are ad-hoc signed and not notarized. Full musical/DAW regression testing remains incomplete.
 
