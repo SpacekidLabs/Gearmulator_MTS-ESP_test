@@ -1,0 +1,5 @@
+.DS_Store
+/build/
+/Source/build/
+/Source/gearmulator/bin/
+/Source/gearmulator/temp/

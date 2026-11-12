@@ -1,0 +1,13 @@
+BUILD THE APPLE SILICON PLUG-INS
+Requires Xcode command-line tools and CMake. Dependencies are bundled.
+Run from this Source folder:
+
+cmake -S gearmulator -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 -DBUILD_TESTING=OFF -DDSP56300_DEBUGGER=OFF -Dgearmulator_BUILD_INSTALLER=OFF -Dgearmulator_COMPONENT_DSPBRIDGE=OFF -Dgearmulator_SYNTH_NODALRED2X=ON -Dgearmulator_SYNTH_JE8086=ON -Dgearmulator_SYNTH_OSTIRUS=ON -Dgearmulator_SYNTH_OSIRUS=OFF -Dgearmulator_SYNTH_VAVRA=OFF -Dgearmulator_SYNTH_XENIA=OFF -Dgearmulator_SYNTH_88EMU=OFF -Dgearmulator_BUILD_JUCEPLUGIN_AU=ON -Dgearmulator_BUILD_JUCEPLUGIN_VST3=ON -Dgearmulator_BUILD_JUCEPLUGIN_VST2=OFF -Dgearmulator_BUILD_JUCEPLUGIN_CLAP=OFF -Dgearmulator_BUILD_JUCEPLUGIN_LV2=OFF -Dgearmulator_BUILD_JUCEPLUGIN_Standalone=OFF -Dgearmulator_BUILD_FX_PLUGIN=OFF
+cmake --build build --config Release --target n2xJucePlugin_AU n2xJucePlugin_VST3 jeJucePlugin_AU jeJucePlugin_VST3 osTIrusJucePlugin_AU osTIrusJucePlugin_VST3 --parallel 6
+
+Outputs: gearmulator/bin/plugins/Release/AU and VST3.
+Ad-hoc sign each output bundle before local use:
+codesign --force --deep --sign - "path/to/plugin.bundle"
+
+The source snapshot omits development notes, repository metadata, and local
+firmware-test targets/fixtures. License and copyright notices are retained.

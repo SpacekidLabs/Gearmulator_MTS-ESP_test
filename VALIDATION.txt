@@ -1,0 +1,12 @@
+Release packaging checks (2026-11-12)
+
+AU/NodalRed2x MTS Test.component: arm64, ad-hoc signature verified
+AU/JE8086 MTS Test.component: arm64, ad-hoc signature verified
+AU/OsTIrus MTS Test.component: arm64, ad-hoc signature verified
+VST3/NodalRed2x MTS Test.vst3: arm64, ad-hoc signature verified
+VST3/JE8086 MTS Test.vst3: arm64, ad-hoc signature verified
+VST3/OsTIrus MTS Test.vst3: arm64, ad-hoc signature verified
+
+All six targets rebuilt successfully in Release mode.
+Source snapshot CMake configuration checked separately.
+No new DAW playback validation was performed for this packaging pass.

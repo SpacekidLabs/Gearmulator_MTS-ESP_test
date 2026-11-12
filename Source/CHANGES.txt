@@ -1,0 +1,11 @@
+Modified Gearmulator snapshot, 2026-11-12
+
+Global MTS-ESP tuning support added to NodalRed2x, JE8086 and OsTIrus.
+Product names and plug-in IDs differ from the original releases.
+
+Main tuning implementation:
+gearmulator/source/claudia/n2x/n2xLib/n2xtuning.h and n2xmc/n2xdevice
+gearmulator/source/ronaldo/je8086/jeLib/tuning.h and je8086/device
+gearmulator/source/axel/virusLib/tuning.h, tuning.cpp, device and dspSingle
+
+MTS-ESP client sources and license are in source/3rdparty/mts-esp.

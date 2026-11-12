@@ -1,0 +1,3 @@
+124e03ad3ca1a2eacffb1e913a1c635b2fab2a7a04cec2fa86cbdfad9c759e8e  JE8086-MTS-Test-macOS-arm64.zip
+d22d11a455334ddff30dc1005ca8a894d71d015d8ca863683950291199d8ab37  NodalRed2x-MTS-Test-macOS-arm64.zip
+1624162fca77f3a1ed46798e3d0d2aee087410472572f246fec0ceaae6615354  OsTIrus-MTS-Test-macOS-arm64.zip

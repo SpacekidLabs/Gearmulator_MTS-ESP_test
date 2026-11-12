@@ -1,0 +1,49 @@
+MICROTONAL MTS TEST COLLECTION — 2026-11-12
+
+NodalRed2x MTS Test, JE8086 MTS Test, OsTIrus MTS Test
+Experimental modified Gearmulator 2.2.28 builds with global MTS-ESP tuning.
+macOS 11 or later, Apple Silicon (arm64). AU and VST3 included.
+Use a native Apple Silicon DAW; Intel/Rosetta hosts are not supported.
+
+INSTALL
+1. Quit your DAW.
+2. In Finder, Go > Go to Folder, enter ~/Library/Audio/Plug-Ins/
+3. Copy the contents of macOS/AU into Components, and macOS/VST3 into VST3.
+   Create these folders if needed. Copy the whole bundles, not their contents.
+4. Supply your own compatible firmware in the matching folder below:
+   ~/Documents/The Usual Suspects/NodalRed2x MTS Test/roms/
+   ~/Documents/The Usual Suspects/JE8086 MTS Test/roms/
+   ~/Documents/The Usual Suspects/OsTIrus MTS Test/roms/
+5. Restart/rescan your DAW and load the desired MTS Test instrument.
+6. Load an MTS-ESP master and select a tuning. Connection is automatic;
+   chords and held notes follow the global tuning table.
+
+These are ad-hoc signed developer builds, not Apple-notarized releases.
+Downloaded plug-ins may require approval in macOS Privacy & Security.
+Original instruments use separate names/IDs. To uninstall, remove only
+these MTS Test bundles. User settings remain in the Documents folders.
+No firmware or personal preset libraries are included.
+
+FIRMWARE
+NodalRed2x: Nord Lead 2X firmware, verified SHA-256:
+5256d2ebe23c39ef01590a78e2f9718ae3d356394f9a82f476ffecc302282f63
+JE8086: JP-8000 v1.05 firmware (not JP-8080 rack), verified SHA-256:
+d2c7f2ccf457553c5c05b2095a187f700e481c67a4bbde1ef793f5241f7d3061
+OsTIrus: Virus TI2 firmware used for validation, SHA-256:
+8e3daea8552f9ecb1b7205bb5f81e7391dcf406e86af81fc7124dba00fb5cd6a
+
+LIMITATIONS
+One global 128-note tuning table; no per-channel tuning, unmapped-key
+filtering, MTS SysEx input, or DSPBridge tuning. JE8086 has one-cent pitch
+resolution. OsTIrus adds tuning after native glide and limits requested
+pitches to MIDI 0–127. Native modulation, detune and pitch bend remain active.
+Automated firmware/render checks were performed during development;
+complete musical regression and testing in every DAW are not complete.
+
+SOURCE AND CREDITS
+Based on Gearmulator by The Usual Suspects, upstream revision
+83480f3cf64390524cbbfad40bd7575c2bb017b4, with added MTS-ESP integration
+and distinct product names/IDs. Modified sources are included under Source.
+ODDSound MTS-ESP client revision f214739b8832e7f297cb9970d0c0efbf783f1462.
+See Licenses and the license/copyright notices in Source for all components.
+See Source/BUILD.txt for build instructions.
